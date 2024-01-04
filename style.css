@@ -1,0 +1,752 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*GENERAL CSS*/
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  background-color: #f6f5ec;
+}
+
+p {
+  color: #3f352c;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h1 {
+  color: #3f352c;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+  margin: 3rem;
+  margin-top: 7rem;
+}
+
+h2 {
+  color: #3f352c;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  margin-left: 3rem;
+}
+
+h3 {
+  color: #3f352c;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  margin-left: 3rem;
+}
+
+h4 {
+  color: #3f352c;
+  font-family: "Josefin Sans", sans-serif;
+  margin-left: 3rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: #3f352c;
+}
+
+a:hover {
+  color: #f6f5ec;
+  transition: color 0.4s;
+}
+
+.footer_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem;
+  margin-left: 3rem;
+}
+
+footer {
+  font-weight: 300;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+  color: #3f352c;
+}
+
+.footer_icons {
+  display: flex;
+  color: #3f352c;
+  margin-left: 40%;
+}
+
+.footer_icons img {
+  width: auto;
+  height: 30px;
+  margin-left: 2.5rem;
+  color: #3f352c;
+}
+
+/* FORSIDE */
+
+.forside_overskrift h1 {
+  margin-left: 33rem;
+  font-size: 4.5rem;
+}
+
+.forside_intro {
+  background-color: #c1b6a4;
+  padding-bottom: 0.8rem;
+  padding-top: 3rem;
+}
+
+.forside_intro_tekst {
+  columns: 2;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 4rem;
+}
+
+.forside_projekt_tekst {
+  margin-top: 14rem;
+  margin-bottom: 4rem;
+  margin-left: 38rem;
+  background-color: #bda18c;
+}
+
+.forside_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  align-content: start;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 8rem;
+}
+
+.forside_punkter {
+  margin-top: 3rem;
+  margin-left: 3rem;
+  line-height: 6rem;
+  font-style: italic;
+}
+
+.forside_punkter h2 img {
+  width: 10%;
+  height: auto;
+}
+
+.forside_punkter h2:hover {
+  color: #e1daca;
+  transition: 0.3s linear;
+}
+
+.projekt_kasse {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.projekt_kasse img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid_kasse {
+  margin-top: 1rem;
+  background-color: #e1daca;
+  padding: 15px;
+  font-style: italic;
+}
+
+.grid_kasse p {
+  margin-left: 6rem;
+}
+.grid_kasse p:hover {
+  color: #e1daca;
+}
+
+.forside_tekst {
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+  background-color: #bda18c;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  margin-left: 38rem;
+  margin-right: 37rem;
+  animation-name: puls;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.forside_tekst h3:hover {
+  color: #e1daca;
+  transition: 0.3s linear;
+}
+
+.billed_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-bottom: 1.5rem;
+  gap: 20px;
+}
+
+/* PROJEKTER */
+
+.introduktion {
+  columns: 2;
+  gap: 30px;
+  margin-left: 3rem;
+  margin-right: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  line-height: 1.7rem;
+}
+
+.projekt_grid {
+  margin-top: 5rem;
+}
+
+.projekt_grid img:hover {
+  transition: 0.3s linear;
+  filter: grayscale(1) brightness(0.7);
+}
+.projekt {
+  background-color: #c1b6a4;
+  padding: 3rem;
+  padding-left: 1rem;
+  margin-right: 3rem;
+}
+
+.projekt2 {
+  background-color: #c1b6a4;
+  padding: 4rem;
+  padding-left: 1rem;
+  margin-left: 3rem;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 8rem;
+  gap: 2rem;
+}
+
+.grid1 img {
+  width: 85%;
+  height: auto;
+  margin-left: 3rem;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 8rem;
+  gap: 2rem;
+}
+
+.grid2 img {
+  width: 85%;
+  height: auto;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 8rem;
+  gap: 2rem;
+}
+
+.grid3 img {
+  width: 85%;
+  height: auto;
+  margin-left: 3rem;
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 8rem;
+  gap: 2rem;
+}
+
+.grid4 img {
+  width: 85%;
+  height: auto;
+  margin-right: 3rem;
+}
+
+/* WEB */
+.web_intro {
+  background-color: #c1b6a4;
+  padding: 2.5rem;
+  padding-left: 1rem;
+  margin-right: 3rem;
+}
+
+.web_intro h3 {
+  margin-top: 3rem;
+  line-height: 1.5rem;
+  font-style: italic;
+  font-weight: 500;
+}
+.web_link {
+  font-style: italic;
+  background-color: #bda18c;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  margin-right: 71.5rem;
+  margin-left: 3rem;
+  white-space: nowrap;
+}
+
+.web_karussel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+/* billeder i karruselen */
+.slides img {
+  width: 100%;
+  height: auto;
+}
+/* pilene i karruselen */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #3f352c;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* tilbage knap */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* næste knap */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.web_link h3:hover {
+  color: #e1daca;
+}
+
+/*UX/UI*/
+.ux_intro {
+  background-color: #c1b6a4;
+  padding: 2.5rem;
+  padding-left: 1rem;
+  margin-left: 3rem;
+}
+
+.ux_intro h3 {
+  margin-top: 3rem;
+  line-height: 1.5rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.ux_karussel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/*ANIMATION*/
+.animation_intro {
+  background-color: #c1b6a4;
+  padding: 2.5rem;
+  padding-left: 1rem;
+  margin-right: 3rem;
+}
+
+.animation_intro h3 {
+  margin-top: 3rem;
+  line-height: 1.5rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.animation_billeder {
+  background-color: #bda18c;
+  padding: 2rem;
+  padding-left: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 2rem;
+  gap: 30px;
+}
+
+.animation_billeder img {
+  width: 90%;
+  height: auto;
+}
+
+/*INDHOLD*/
+.indhold_intro {
+  background-color: #c1b6a4;
+  padding: 2.5rem;
+  padding-left: 1rem;
+  margin-left: 3rem;
+}
+
+.indhold_intro h3 {
+  margin-top: 3rem;
+  line-height: 1.5rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.indhold_karussel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.indhold_link {
+  font-style: italic;
+  background-color: #bda18c;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-right: 68.5rem;
+  margin-left: 3rem;
+  white-space: nowrap;
+}
+
+.indhold_link h3:hover {
+  color: #e1daca;
+}
+
+.h2 {
+  margin-left: 37rem;
+}
+.indhold_billeder {
+  background-color: #bda18c;
+  padding: 2rem;
+  padding-left: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 2rem;
+  gap: 20px;
+}
+/* OM MIG */
+.tekst_billede {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 4rem;
+  gap: 55px;
+  line-height: 2rem;
+}
+.tekst_billede img {
+  width: 70%;
+  height: auto;
+}
+.some_boks {
+  background-color: #c1b6a4;
+  padding: 3rem;
+  padding-bottom: 6rem;
+  margin-bottom: 10rem;
+}
+
+.some_overskift {
+  margin-left: 33rem;
+  margin-top: 1rem;
+  font-style: italic;
+}
+.some {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  align-content: start;
+  margin-top: 3rem;
+  margin-right: 22rem;
+}
+
+.some img {
+  width: 10%;
+  height: auto;
+  margin-left: 20rem;
+}
+
+.tiktok {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  width: 70%;
+  height: 70%;
+  margin-left: 13rem;
+  margin-bottom: 4rem;
+}
+
+.tiktok img:hover {
+  filter: grayscale(1.5);
+  transition: 0.3s linear;
+}
+
+@keyframes puls {
+  100% {
+    scale: 120%;
+  }
+}
+
+.tiktok_tekst {
+  margin-left: 33rem;
+  font-style: italic;
+  background-color: #bda18c;
+  padding: 1.1rem;
+  margin-right: 31rem;
+  animation-name: puls;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.tiktok_tekst h3:hover {
+  color: #e1daca;
+  transition: 0.3s linear;
+}
+.insta {
+  background-color: #e1daca;
+  padding: 4rem;
+  padding-bottom: 6rem;
+  padding-top: 5rem;
+}
+
+.insta_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  align-content: start;
+}
+
+.insta_tekst {
+  margin-left: 28rem;
+  margin-bottom: 3rem;
+}
+
+.nico {
+  margin-left: 7rem;
+  margin-top: 1rem;
+  font-style: italic;
+}
+.grid {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.grid img:hover {
+  filter: grayscale(1.5);
+  transition: 0.3s linear;
+}
+
+/* KONTAKT */
+
+.kontakt_billede {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 50%;
+  height: 50%;
+  margin-top: 4rem;
+  margin-left: 22rem;
+}
+.kontakt_boks {
+  background-color: #e1daca;
+  padding: 6rem;
+}
+
+.kontakt_boks img {
+  width: 20%;
+  height: auto;
+  margin-left: 30rem;
+}
+.kontakt_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10rem;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  line-height: 4rem;
+  font-weight: bold;
+}
+.kontakt_mig {
+  margin-left: 31rem;
+}
+
+/*MOBILESITE*/
+
+@media (max-width: 800px) {
+  /*FORSIDE*/
+  .forside_overskrift h1 {
+    margin-left: 6rem;
+  }
+  .forside_punkter {
+    margin-top: 0.2rem;
+    margin-left: 3rem;
+    line-height: 2.5rem;
+    white-space: nowrap;
+  }
+  .forside_tekst {
+    margin-left: 14rem;
+    animation-name: puls;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    white-space: nowrap;
+  }
+
+  .forside_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-content: start;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 8rem;
+  }
+
+  /*WEB*/
+
+  /*UX*/
+
+  /*ANIMAION*/
+
+  .animation_billeder {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /*INDHOLD*/
+  .indhold_billeder {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .h2 {
+    margin-left: 14rem;
+  }
+
+  .indhold_intro {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /* OM MIG */
+  .some_overskift {
+    margin-left: 9rem;
+    margin-top: 1rem;
+  }
+  .some {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    align-content: start;
+    margin-top: 3rem;
+  }
+  .some img {
+    width: 10%;
+    height: auto;
+    margin-left: 9rem;
+  }
+
+  @keyframes puls {
+    100% {
+      scale: 80%;
+    }
+  }
+  .tiktok_tekst {
+    margin-left: 12rem;
+    white-space: nowrap;
+  }
+
+  .tiktok {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 7rem;
+  }
+
+  .insta_tekst {
+    margin-left: 10rem;
+    margin-bottom: 3rem;
+  }
+  .nico {
+    margin-left: 2rem;
+  }
+  .insta_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* KONTAKT */
+  .kontakt_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0.7rem;
+    line-height: 2rem;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  .kontakt_boks img {
+    margin-left: 12rem;
+  }
+  .kontakt_mig {
+    margin-left: 7rem;
+  }
+  .kontakt_billede {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 11rem;
+  }
+
+  /* FOOTER */
+  .footer_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    margin-left: 1rem;
+    white-space: nowrap;
+  }
+  .footer_icons {
+    display: flex;
+    color: #3f352c;
+    margin-left: 2rem;
+  }
+}
