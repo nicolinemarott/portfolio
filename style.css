@@ -233,11 +233,11 @@ footer {
   display: grid;
   grid-template-columns: 2fr 1fr;
   margin-bottom: 8rem;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .grid2 img {
-  width: 85%;
+  width: 90%;
   height: auto;
 }
 
@@ -258,11 +258,11 @@ footer {
   display: grid;
   grid-template-columns: 2fr 1fr;
   margin-bottom: 8rem;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .grid4 img {
-  width: 85%;
+  width: 90%;
   height: auto;
   margin-right: 3rem;
 }
@@ -338,12 +338,11 @@ footer {
   user-select: none;
 }
 
-/* tilbage knap */
 .prev {
   left: 0;
   border-radius: 3px 0 0 3px;
 }
-/* næste knap */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -354,6 +353,21 @@ footer {
 }
 
 /*UX/UI*/
+.ux_link {
+  font-style: italic;
+  background-color: #bda18c;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-right: 68.5rem;
+  margin-left: 3rem;
+  white-space: nowrap;
+}
+
+.ux_link h3:hover {
+  color: #e1daca;
+}
 .ux_intro {
   background-color: #c1b6a4;
   padding: 2.5rem;
@@ -383,6 +397,23 @@ footer {
 }
 
 /*ANIMATION*/
+
+.animation_link {
+  font-style: italic;
+  background-color: #bda18c;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-right: 68.5rem;
+  margin-left: 3rem;
+  white-space: nowrap;
+}
+
+.animation_link h3:hover {
+  color: #e1daca;
+}
+
 .animation_intro {
   background-color: #c1b6a4;
   padding: 2.5rem;
@@ -444,7 +475,17 @@ footer {
   font-style: italic;
   font-weight: 500;
 }
-
+.video_h2 {
+  margin-left: 35rem;
+  margin-top: 6rem;
+}
+.video_container {
+  display: flex;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 7rem;
+  gap: 40px;
+}
 .indhold_karussel {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -673,26 +714,23 @@ label {
   margin-top: 20px;
   text-transform: uppercase;
 }
+.send_knap:hover {
+  color: #3f352c;
+}
 
 /*MOBILESITE*/
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   /*FORSIDE*/
   .forside_overskrift h1 {
-    margin-left: 6rem;
+    font-size: 2rem;
+    margin-left: 10rem;
   }
+
   .forside_punkter {
     margin-top: 0.2rem;
-    margin-left: 3rem;
+    margin-left: 1rem;
     line-height: 2.5rem;
-    white-space: nowrap;
-  }
-  .forside_tekst {
-    margin-left: 14rem;
-    animation-name: puls;
-    animation-duration: 1.2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
     white-space: nowrap;
   }
 
@@ -701,41 +739,158 @@ label {
     grid-template-columns: 1fr 1fr;
     gap: 25px;
     align-content: start;
-    margin-left: 3rem;
-    margin-right: 3rem;
     margin-bottom: 8rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .projekt_kasse {
+    display: flex;
+  }
+
+  .projekt_kasse img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .forside_knap {
+    margin-left: 10rem;
+    animation-name: puls;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    white-space: nowrap;
   }
 
   /*WEB*/
+  .web_overskrift {
+    font-size: 2rem;
+  }
 
-  /*UX*/
-
-  /*ANIMAION*/
-
-  .animation_billeder {
+  .web_link {
+    margin-left: 0.1rem;
+  }
+  .grid1 {
     display: grid;
     grid-template-columns: 1fr;
+    margin-left: 3rem;
+  }
+
+  .grid1 img {
+    margin-left: 0.1rem;
+  }
+  .web_karussel {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-left: 0.5rem;
+  }
+  .slideshow-container {
+    margin: auto;
+  }
+
+  /*UX*/
+  .ux_overskrift {
+    font-size: 2rem;
+  }
+
+  .ux_link {
+    margin-left: 0.1rem;
+  }
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 0.1rem;
+    margin-right: 3rem;
+  }
+  .grid2 img {
+    margin-left: 3rem;
+  }
+
+  .ux_karussel {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-left: 0.5rem;
+  }
+  .slideshow-container {
+    margin: auto;
+  }
+
+  /*ANIMAION*/
+  .animation_overskrift {
+    font-size: 2rem;
+  }
+  .animation_link {
+    margin-left: 0.1rem;
+  }
+
+  .grid3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 3rem;
+  }
+
+  .grid3 img {
+    margin-left: 0.1rem;
+  }
+  .animation_karussel {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-left: 0.5rem;
+  }
+  .slideshow-container {
+    margin: auto;
   }
 
   /*INDHOLD*/
-  .indhold_billeder {
-    display: grid;
-    grid-template-columns: 1fr;
+  .indhold_overskrift {
+    font-size: 2rem;
   }
 
+  .indhold_link {
+    margin-left: 0.2rem;
+  }
   .h2 {
-    margin-left: 14rem;
+    margin-left: 7.5rem;
   }
 
-  .indhold_intro {
+  .grid4 {
     display: grid;
     grid-template-columns: 1fr;
+    margin-right: 3rem;
+  }
+
+  .grid4 img {
+    margin-left: 3rem;
+  }
+  .indhold_karussel {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .indhold_karussel h3 {
+    margin-left: 0.1rem;
+  }
+  .slideshow-container {
+    margin: auto;
   }
 
   /* OM MIG */
+  .tekst_billede {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .tekst_billede img {
+    margin-left: 3.5rem;
+  }
   .some_overskift {
-    margin-left: 9rem;
+    margin-left: 3rem;
     margin-top: 1rem;
+    white-space: nowrap;
   }
   .some {
     display: grid;
@@ -745,33 +900,34 @@ label {
     margin-top: 3rem;
   }
   .some img {
-    width: 10%;
+    width: 20%;
     height: auto;
-    margin-left: 9rem;
+    margin-left: 5.5rem;
   }
 
   @keyframes puls {
     100% {
-      scale: 80%;
+      scale: 70%;
     }
   }
   .tiktok_tekst {
-    margin-left: 12rem;
+    margin-left: 7rem;
     white-space: nowrap;
   }
 
   .tiktok {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: 7rem;
+    margin-left: 5rem;
   }
 
   .insta_tekst {
-    margin-left: 10rem;
+    margin-left: 0.1rem;
     margin-bottom: 3rem;
+    white-space: nowrap;
   }
   .nico {
-    margin-left: 2rem;
+    margin-left: 6rem;
   }
   .insta_grid {
     display: grid;
@@ -779,38 +935,40 @@ label {
   }
 
   /* KONTAKT */
-  .kontakt_info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 0.7rem;
-    line-height: 2rem;
-    font-weight: bold;
-    white-space: nowrap;
-  }
   .kontakt_boks img {
-    margin-left: 12rem;
+    display: none;
+
+    margin-left: 5rem;
   }
-  .kontakt_mig {
-    margin-left: 7rem;
-  }
+
   .kontakt_billede {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: 11rem;
+    margin-left: 8rem;
+  }
+  .kontakt_mig {
+    margin-left: 2rem;
+    white-space: nowrap;
   }
 
   /* FOOTER */
   .footer_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 10px;
-    margin-left: 1rem;
     white-space: nowrap;
+    margin-left: 0.1rem;
   }
   .footer_icons {
     display: flex;
     color: #3f352c;
-    margin-left: 2rem;
+    margin-left: 9rem;
+    margin-top: 1rem;
+  }
+
+  .footer_icons img {
+    width: 10%;
+    height: auto;
   }
 }
