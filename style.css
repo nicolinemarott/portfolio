@@ -103,20 +103,6 @@ footer {
   padding-top: 3rem;
 }
 
-.forside_intro_tekst {
-  columns: 2;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  margin-bottom: 4rem;
-}
-
-.forside_projekt_tekst {
-  margin-top: 14rem;
-  margin-bottom: 4rem;
-  margin-left: 38rem;
-  background-color: #bda18c;
-}
-
 .forside_grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -170,7 +156,7 @@ footer {
   color: #e1daca;
 }
 
-.forside_tekst {
+.forside_knap {
   margin-top: 10rem;
   margin-bottom: 4rem;
   background-color: #bda18c;
@@ -184,7 +170,7 @@ footer {
   animation-direction: alternate;
 }
 
-.forside_tekst h3:hover {
+.forside_knap h3:hover {
   color: #e1daca;
   transition: 0.3s linear;
 }
@@ -314,6 +300,12 @@ footer {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+.web_karussel h3 {
+  line-height: 1.7rem;
+  margin-right: 3rem;
+  font-weight: 500;
+}
+
 .slideshow-container {
   width: 100%;
   position: relative;
@@ -384,6 +376,12 @@ footer {
   margin-bottom: 3rem;
 }
 
+.ux_karussel h3 {
+  line-height: 1.7rem;
+  margin-right: 3rem;
+  font-weight: 500;
+}
+
 /*ANIMATION*/
 .animation_intro {
   background-color: #c1b6a4;
@@ -420,6 +418,11 @@ footer {
   margin-left: 3rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+.animation_karussel h3 {
+  line-height: 1.7rem;
+  margin-right: 3rem;
+  font-weight: 500;
 }
 
 .animation_karussel img {
@@ -500,6 +503,10 @@ footer {
 .tekst_billede img {
   width: 70%;
   height: auto;
+}
+
+.ommig_p {
+  margin-top: 1rem;
 }
 .some_boks {
   background-color: #c1b6a4;
@@ -610,6 +617,11 @@ footer {
   margin-top: 4rem;
   margin-left: 22rem;
 }
+
+.kontakt_mig {
+  margin-left: 31rem;
+}
+
 .kontakt_boks {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -618,12 +630,31 @@ footer {
 }
 
 .kontakt_boks img {
-  width: 40%;
+  width: 70%;
   height: auto;
+  margin-left: 6rem;
+  margin-top: 4rem;
 }
 
-.kontakt_mig {
-  margin-left: 31rem;
+.form-felt {
+  margin-bottom: 2rem;
+}
+
+#fornavn,
+#efternavn,
+#email {
+  width: 300px;
+  height: 25px;
+}
+
+#besked {
+  width: 300px;
+  height: 60px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
 }
 
 .kontaktform {
@@ -632,9 +663,15 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
-.form-felt {
-  margin-bottom: 2rem;
+.send_knap {
+  background-color: #bda18c;
+  color: #ffff;
+  padding: 1rem 3rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  text-transform: uppercase;
 }
 
 /*MOBILESITE*/
