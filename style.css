@@ -192,6 +192,7 @@ footer {
   margin-top: 2rem;
   margin-bottom: 4rem;
   line-height: 1.7rem;
+  text-align: justify;
 }
 
 .projekt_grid {
@@ -304,6 +305,7 @@ footer {
   line-height: 1.7rem;
   margin-right: 3rem;
   font-weight: 500;
+  text-align: justify;
 }
 
 .slideshow-container {
@@ -394,6 +396,8 @@ footer {
   line-height: 1.7rem;
   margin-right: 3rem;
   font-weight: 500;
+  font-weight: 500;
+  text-align: justify;
 }
 
 /*ANIMATION*/
@@ -454,6 +458,8 @@ footer {
   line-height: 1.7rem;
   margin-right: 3rem;
   font-weight: 500;
+  font-weight: 500;
+  text-align: justify;
 }
 
 .animation_karussel img {
@@ -497,6 +503,8 @@ footer {
   line-height: 1.7rem;
   margin-right: 3rem;
   font-weight: 500;
+  font-weight: 500;
+  text-align: justify;
 }
 
 .karussel_h3 {
@@ -540,10 +548,12 @@ footer {
   margin-bottom: 4rem;
   gap: 55px;
   line-height: 2rem;
+  text-align: justify;
 }
 .tekst_billede img {
   width: 70%;
   height: auto;
+  margin-left: 2rem;
 }
 
 .ommig_p {
@@ -760,9 +770,13 @@ label {
 
   .forside_punkter {
     margin-top: 0.2rem;
-    margin-left: 1rem;
+    margin-left: 0.1rem;
     line-height: 2.5rem;
     white-space: nowrap;
+  }
+
+  .forside_punkter h2 {
+    margin-left: 0.1rem;
   }
 
   .forside_grid {
@@ -786,11 +800,8 @@ label {
   }
 
   .forside_knap {
-    margin-left: 10rem;
-    animation-name: puls;
-    animation-duration: 1.2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    margin-left: 8rem;
+    animation: none;
     white-space: nowrap;
   }
 
@@ -819,7 +830,7 @@ label {
   }
 
   .web_karussel h3 {
-    margin-left: 0.1rem;
+    margin-left: 0.5rem;
   }
   .slideshow-container {
     margin: auto;
@@ -943,6 +954,8 @@ label {
   }
 
   .tekst_billede img {
+    width: 100%;
+    height: auto;
     margin-left: 0.1rem;
   }
 
@@ -956,7 +969,7 @@ label {
     grid-template-columns: 1fr 1fr;
     width: 15%;
     height: auto;
-    margin-left: 0.1rem;
+    margin-left: 1rem;
   }
   .some_overskift {
     margin-left: 3rem;
@@ -976,14 +989,11 @@ label {
     margin-left: 5.5rem;
   }
 
-  @keyframes puls {
-    100% {
-      scale: 70%;
-    }
-  }
   .tiktok_tekst {
-    margin-left: 7rem;
+    margin-left: 4rem;
     white-space: nowrap;
+    padding: 0%;
+    animation: none;
   }
 
   .tiktok {
@@ -1008,8 +1018,6 @@ label {
   /* KONTAKT */
   .kontakt_boks img {
     display: none;
-
-    margin-left: 5rem;
   }
 
   .kontakt_billede {
@@ -1017,6 +1025,7 @@ label {
     grid-template-columns: 1fr 1fr;
     margin-left: 8rem;
   }
+
   .kontakt_mig {
     margin-left: 2rem;
     white-space: nowrap;
