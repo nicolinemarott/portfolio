@@ -550,10 +550,42 @@ footer {
   margin-top: 1rem;
 }
 .some_boks {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
   background-color: #c1b6a4;
   padding: 3rem;
   padding-bottom: 6rem;
-  margin-bottom: 10rem;
+  margin-bottom: 2rem;
+  margin-top: 9rem;
+}
+.some_boks2 {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  background-color: #c1b6a4;
+  padding: 3rem;
+  padding-bottom: 6rem;
+  margin-bottom: 14rem;
+}
+
+.kompetencer {
+  margin-left: 33.5rem;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.iconer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-content: start;
+  margin-top: 4rem;
+  margin-left: 19rem;
+  gap: 60px;
+}
+
+.iconer img {
+  width: 25%;
+  height: auto;
+  margin-left: 5rem;
 }
 
 .some_overskift {
@@ -564,16 +596,15 @@ footer {
 .some {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
   align-content: start;
-  margin-top: 3rem;
-  margin-right: 22rem;
+  margin-top: 4rem;
+  margin-right: 5rem;
 }
 
 .some img {
-  width: 10%;
+  width: 8%;
   height: auto;
-  margin-left: 20rem;
+  margin-left: 20.5rem;
 }
 
 .tiktok {
@@ -583,7 +614,7 @@ footer {
   width: 70%;
   height: 70%;
   margin-left: 13rem;
-  margin-bottom: 4rem;
+  margin-bottom: 7rem;
 }
 
 .tiktok img:hover {
@@ -786,6 +817,10 @@ label {
     gap: 50px;
     margin-left: 0.5rem;
   }
+
+  .web_karussel h3 {
+    margin-left: 0.1rem;
+  }
   .slideshow-container {
     margin: auto;
   }
@@ -812,7 +847,12 @@ label {
     display: grid;
     grid-template-columns: 1fr;
     gap: 50px;
-    margin-left: 0.5rem;
+    margin-left: 2rem;
+    margin-right: 3rem;
+  }
+
+  .ux_karussel h3 {
+    margin-left: 0.1rem;
   }
   .slideshow-container {
     margin: auto;
@@ -840,6 +880,7 @@ label {
     grid-template-columns: 1fr;
     gap: 50px;
     margin-left: 0.5rem;
+    margin-right: 3rem;
   }
   .slideshow-container {
     margin: auto;
@@ -866,10 +907,27 @@ label {
   .grid4 img {
     margin-left: 3rem;
   }
+
+  .video_h2 {
+    margin-left: 0.1rem;
+  }
+
+  .video_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+  }
+
+  .video {
+    width: 90%;
+    height: auto;
+  }
+
   .indhold_karussel {
     display: grid;
     grid-template-columns: 1fr;
     gap: 50px;
+    margin-right: 3rem;
   }
   .indhold_karussel h3 {
     margin-left: 0.1rem;
@@ -885,7 +943,20 @@ label {
   }
 
   .tekst_billede img {
-    margin-left: 3.5rem;
+    margin-left: 0.1rem;
+  }
+
+  .kompetencer {
+    margin-left: 3rem;
+    margin-top: 1rem;
+  }
+
+  .iconer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 15%;
+    height: auto;
+    margin-left: 0.1rem;
   }
   .some_overskift {
     margin-left: 3rem;
