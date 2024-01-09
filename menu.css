@@ -79,3 +79,19 @@ nav {
     display: block;
   }
 }
+@media only screen and (max-width: 600px) {
+  header nav {
+    flex-direction: column; /* Change the flex direction to column for smaller screens */
+    align-items: center; /* Center items in the column */
+  }
+
+  header nav ul.menu {
+    width: 100%; /* Make sure the menu takes full width */
+    text-align: center; /* Center the text within the menu */
+    margin-bottom: 10px; /* Add some space between menus */
+  }
+
+  .burger {
+    display: block; /* Ensure the burger menu is visible on smaller screens */
+  }
+}
